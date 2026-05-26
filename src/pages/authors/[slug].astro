@@ -1,7 +1,8 @@
----
-import Layout from "../../layouts/layout.astro";
-import { client, urlFor } from "../../lib/sanity";
 
+---
+import Layout from "../../layouts/Layout.astro";
+import { client, urlFor } from "../../lib/sanity";
+---
 export async function getStaticPaths() {
 
   const authors = await client.fetch(`
